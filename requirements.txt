@@ -1,0 +1,9 @@
+Requirements
+
+eel
+nltk
+pyaudio
+pyttsx3
+psycopg2
+speech_recognition
+

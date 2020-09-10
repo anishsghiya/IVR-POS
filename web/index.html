@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>QR Code Generator</title>  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="style2.css" rel="stylesheet">
+    <link href="style3.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <section class="wellcome_area clearfix" id="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 col-md">
+                    <div class="wellcome-heading">
+                        <h2>IVR-POS</h2>
+                        <p>Making Shopping Easier :)</p>
+                    </div>
+                    <div class="get-start-area">
+                        <form class="form-inline">
+                            <input type="button" id="data" class="form-control email" value="Generate Bill">
+                            <input type="button" class="submit" value="Get QR Code" onclick="generateTable()">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="wellcome_area clearfix initial" id="displaycart">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 col-md">
+                    <div class="wellcome-heading">
+                        <h2>Your Shopping Cart</h2>
+                        <p>Shop to your Heart's Content!</p>
+                    </div>
+                    <div class="get-start-area" id="test1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="test">           
+        </div>
+    </section>
+    <section class="wellcome_area_assistant clearfix initial" id="assistant">
+        <div class="container h-100">
+            <div class="row h-100 ">
+                <div class="container" id="chat">
+                </div>
+            </div>
+        </div>
+        <div class="googleassist">
+            <span id="bluedot" class="voicedot"></span>
+            <span id="reddot" class="voicedot"></span>
+            <span id="yellowdot" class="voicedot"></span>
+            <span id="greendot" class="voicedot"></span>
+        </div>
+        <!-- <main class="small">
+            <nav class="sticky">
+              <header class="cutout-bar">
+                radial gradient:<br> A+ works as i'd like, for circles
+                <div class="icon">hi</div>
+              </header>
+              <div class="button small">+</div>
+            </nav>
+            <section>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+            </section>
+          </main> -->
+    </section>
+    
+    <nav class="menu navbar-nav">
+        <label for="three" onclick="generateAssistant()">
+        <div class="voicebutton small"><i class="material-icons">mic</i></div></label>
+		<input type="radio" name="menu" id="one" checked>
+		<input type="radio" name="menu" id="two">
+		<input type="radio" name="menu" id="three">
+		<input type="radio" name="menu" id="four">
+        <input type="radio" name="menu" id="five">
+		<div class="list">
+			<div class="link-wrap">
+				<label for="one" onclick="generateHome()">
+					<i class="material-icons purpleicon">home</i>
+					<span>Home</span>
+				</label>
+				<label for="two" onclick="sectiontest()">
+					<i class="material-icons purpleicon">chat</i>
+					<span>Chat</span>
+				</label>
+				<label for="six">
+                    
+					<!-- <i class="material-icons purpleicon">mic</i>
+					<span>Assistant</span> -->
+                </label>
+				<label for="four">
+					<i class="material-icons purpleicon">menu</i>
+					<span>Menu</span>
+                </label>              
+                <label for="five" onclick="generateTable()">
+					<i class="material-icons purpleicon">shopping_basket</i>
+					<span>Basket</span>
+				</label>
+			</div>
+		</div>
+    </nav>
+</body>
+<script type="text/javascript" src="/eel.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</html>
